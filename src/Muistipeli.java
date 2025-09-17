@@ -41,5 +41,15 @@ public class Muistipeli {
             input=in.nextLine();
             syotetytNumerot[i]=Integer.parseInt(input);
         }
+        System.out.printf("Oikeat numerot olivat: ");
+        for (int i=0;i<numerot.length;i++)
+        {
+            System.out.printf(numerot[i] + " ");
+        }
+        System.out.printf("\nSinun numerosi olivat: ");
+        for (int i=0;i<syotetytNumerot.length;i++)
+        {
+            System.out.printf(syotetytNumerot[i] + " ");
+        }
     }
 }
