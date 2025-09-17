@@ -16,5 +16,19 @@ public class Muistipeli {
             System.out.printf(numerot[i] + " ");
         }
         System.out.printf("     (kolmen sekunnin jälkeen ruutu tyhjennetään)");
+
+        try
+        {
+            Thread.sleep(3000);
+        }
+        catch(InterruptedException ex)
+        {
+            Thread.currentThread().interrupt();
+        }
+
+        for (int i=0;i<20;++i)
+        {
+            System.out.println();
+        }
     }
 }
