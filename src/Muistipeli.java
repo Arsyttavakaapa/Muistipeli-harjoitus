@@ -1,9 +1,13 @@
 import java.util.Random;
+import java.util.Scanner;
 public class Muistipeli {
     public static void main(String[] args) throws Exception {
 
         int[] numerot = new int[7];
+        int[] syotetytNumerot = new int[7];
         Random r= new Random();
+        Scanner in = new Scanner(System.in);
+        String input="";
 
         for (int i=0;i<numerot.length;i++)
         {
@@ -29,6 +33,13 @@ public class Muistipeli {
         for (int i=0;i<20;++i)
         {
             System.out.println();
+        }
+
+        for (int i=0;i<numerot.length;i++)
+        {
+            System.out.println("Syötä " + (i+1) +". numero:");
+            input=in.nextLine();
+            syotetytNumerot[i]=Integer.parseInt(input);
         }
     }
 }
