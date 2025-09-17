@@ -9,6 +9,12 @@ public class Muistipeli {
         {
             numerot[i]=r.nextInt(5)+1;
         }
+        System.out.println("Yritä muistaa alla olevat numerot. Näet numerot 3 sekunnin ajan");
 
+        for (int i=0;i<numerot.length;i++)
+        {
+            System.out.printf(numerot[i] + " ");
+        }
+        System.out.printf("     (kolmen sekunnin jälkeen ruutu tyhjennetään)");
     }
 }
